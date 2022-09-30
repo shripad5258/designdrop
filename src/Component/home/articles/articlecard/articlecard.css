@@ -1,0 +1,57 @@
+#article {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.101);
+  margin: 50px 0px ;
+  box-shadow: 5px 10px 8px #88888837;
+
+  
+}
+
+.article-wrapper {
+  padding: 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+}
+
+#article h2 {
+  font-size: 3.2rem;
+}
+#article .article-text p {
+  font-size: 1.6rem;
+  color: #555;
+}
+#article .small {
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 600;
+}
+.article-img {
+  flex: 1 1 400px;
+  padding-right: 20px;
+}
+.article-text {
+  flex: 1 1 400px;
+  height: 100%;
+  margin: auto;
+}
+
+.article-wrapper .article-img img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: auto;
+}
+
+
+
+.articleNavigate{
+  margin-top: 20px;
+}
+.articleNavigate:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.page-not-found {
+  padding-top: 30vh;
+  height: 90vh;
+  position: relative;
+}
+.page-not-found .content {
+  position: relative;
+  box-shadow: 5px 10px 8px #6a6a6a67;
+
+  width: 100%;
+  height: 300px;
+  background-color: rgba(189, 189, 189, 0.227);
+
+
+}
+.page-not-found .content h1 {
+  position: absolute;
+  font-size: 30px;
+  top: 20%;
+  left: 15%;
+}
+.page-not-found .content h2 {
+  position: absolute;
+  font-size: 20px;
+  top: 40%;
+  left: 15%;
+}

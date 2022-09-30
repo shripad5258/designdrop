@@ -1,0 +1,48 @@
+.blogdetail {
+  padding-top: 90px;
+}
+
+.blogform-container {
+  word-break: break-all;
+  background-color: rgba(172, 172, 172, 0.403);
+  padding: 20px;
+}
+
+.blogform-container img {
+  height: 70vh;
+  object-fit: cover;
+  width: 100%;
+}
+.blogform-container .tag {
+  margin-top: 50px;
+  color: rgb(71, 71, 71);
+  padding: 20px 0px;
+}
+.blogform-container .heading h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.blogform-container .description {
+  font-size: 16px;
+}
+
+.blogcontent {
+  position: relative;
+}
+
+.deleteblog-icons {
+  align-items: center;
+  margin-top: 8px;
+  position: absolute;
+  right: 0px;
+  color: black;
+}
+.deleteblog-icon {
+  padding: 0px 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.deleteblog-icons Link {
+  color: black;
+}

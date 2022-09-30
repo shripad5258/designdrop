@@ -1,0 +1,18 @@
+
+.userblog img{
+    height: 80vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.userblog-container{
+    margin-top: 40px;
+}
+
+.userblog-container .tagline{
+    color: gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 11px;
+}

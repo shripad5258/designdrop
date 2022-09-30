@@ -1,0 +1,21 @@
+.footer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65, 65, 65);
+}
+
+.footer h1{
+    /* display: flex; */
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65, 65, 65);
+}
+.footer span{
+    color: rgb(44, 140, 121);
+}

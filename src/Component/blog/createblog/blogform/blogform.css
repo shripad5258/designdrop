@@ -1,0 +1,138 @@
+.blogform {
+  height: auto;
+}
+
+.blogform-container {
+  height: auto;
+  width: auto;
+}
+
+.blogform-wrapper {
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+.blogform-wrapper input {
+  font-size: 2rem;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.blogform-container textarea {
+  font-size: 2rem;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  height: 500px;
+  max-height: auto;
+}
+
+.blogform-wrapper select {
+  margin-top: 20px;
+
+  font-size: 2rem;
+  font-weight: 500;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ddd;
+}
+
+.blogform-wrapper h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.blogform-button {
+  font-weight: 400;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.blogform-button input {
+  cursor: pointer;
+  background: hsl(168deg 76% 36%);
+  color: #fff;
+}
+
+.flexselection {
+  display: flex;
+  justify-content: space-between;
+}
+strong:hover {
+  cursor: pointer;
+}
+
+strong:hover,
+strong:visited {
+  color: rgb(88, 88, 88);
+}
+strong:active {
+  color: rgb(88, 88, 88);
+}
+
+Link {
+  color: black;
+  text-decoration: none;
+}
+strong {
+  color: rgb(231, 231, 231);
+}
+
+.blogform-bottom strong {
+  color: black;
+}
+
+.blogform-navigate:hover {
+  color: rgb(83, 83, 83);
+}
+/* Media Query */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .blogform {
+    margin-top: 0px;
+  }
+
+  .blogform-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .blogform-wrapper {
+    width: 90%;
+    order: 2;
+  }
+
+  .blogform-container,
+  .blogform {
+    height: auto;
+  }
+  .blogform-container {
+    margin-top: 4.5vh;
+  }
+  .blogform-button {
+    font-size: 1.8rem;
+  }
+  .blogform-bottom {
+    font-size: 1.6rem;
+  }
+  .flexselection {
+    display: initial;
+  }
+  .blogform-button {
+    width: 250px;
+  }
+}

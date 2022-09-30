@@ -1,0 +1,110 @@
+.image {
+  height: 80vh;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.257)
+    ),
+    url("../../../img/blog-page/Defaultblogimage.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-header {
+  position: relative;
+}
+
+.blog-heading {
+  position: absolute;
+  top: 58%;
+  font-size: 15px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  word-spacing: 5px;
+  text-transform: capitalize;
+  color: rgb(49, 49, 49);
+}
+.form-button {
+  font-weight: 400;
+  width: 50%;
+}
+
+.blog-button {
+  display: inline-block;
+  padding: 0.5em 5em;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.createblog-button {
+  font-size: 15px;
+  padding: 0.5em 5em;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  padding: 0.5em 5em;
+  float: right;
+  margin-right: 0px;
+  margin: 5px 5px;
+  
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.createblog {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Media Query */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .form {
+    margin-top: 0px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-wrapper {
+    width: 90%;
+    order: 2;
+  }
+  .form-image {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .form-container,
+  .form {
+    height: auto;
+  }
+  .form-container {
+    margin-top: 4.5vh;
+  }
+  .blog-button {
+    font-size: 1.8rem;
+  }
+  .form-bottom {
+    font-size: 1.6rem;
+  }
+  .createblog-button {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
