@@ -25,7 +25,7 @@ A virtual blog,Articles,and news application using the MERN stack (MongoDB, Expr
 
 This application is deployed on render and can be accessed through the following link:
 
-[MERN Blog on render](https://designdrop.onrender.com/)
+[MERN designDrop on render](https://designdrop.onrender.com/)
 
 ## Technology
 
@@ -88,7 +88,7 @@ All the models can be found in the models directory created using mongoose.
 
 To run this application (the master branch), you have to set your own environmental variables in the server root folder. For security reasons, some variables have been hidden from view and used as environmental variables with the help of dotenv package. Below are the variables that you need to set in order to run the application:
 
-- MONGO_URI: this is the connection string of your MongoDB Atlas database.
+- MONGO_URI: this is the connection string of your MongoDB database.
 
 - SECRET_KEY: you can provide any string here, it is used to encrypt the JWT authentication token.
 
