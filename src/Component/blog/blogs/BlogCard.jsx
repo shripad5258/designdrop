@@ -84,11 +84,10 @@ function BlogCard(props) {
                       className="fa fa-trash fa-4x"
                       aria-hidden="true"
                     >
-                      delete
+                      
                     </i>
                     <Link to={`/updateblog/${id}`}>
-                      <FontAwesomeIcon icon="check-square" />
-                      <i className="fas fa-edit fa-4x ">update</i>
+                      <i className="fas fa-edit fa-4x "></i>
                     </Link>
                   </>
                 )}
