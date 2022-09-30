@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+// fontawasom
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //TOAST
 import { toast } from "react-toastify";
 
@@ -23,7 +24,6 @@ function BlogCard(props) {
     blog,
     setblog,
   } = props;
-
 
   const deletePost = async () => {
     const url = `${process.env.REACT_APP_BACKEND_URL}/delete/${id}`;
@@ -47,7 +47,6 @@ function BlogCard(props) {
       toast.error("Something went wrong! please try again later");
     }
   };
-
 
   return (
     <div>
@@ -84,8 +83,11 @@ function BlogCard(props) {
                       onClick={deletePost}
                       className="fa fa-trash fa-4x"
                       aria-hidden="true"
-                    >delete</i>
+                    >
+                      delete
+                    </i>
                     <Link to={`/updateblog/${id}`}>
+                      <FontAwesomeIcon icon="check-square" />
                       <i className="fas fa-edit fa-4x ">update</i>
                     </Link>
                   </>
