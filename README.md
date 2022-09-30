@@ -16,12 +16,12 @@ A virtual blog,Articles,and news application using the MERN stack (MongoDB, Expr
 
 ## Demo
 
-![Image description](screenshot-1.png)
+![Image description](Screenshot-1.png)
 
-![Image description](screenshot-2.png)
-![Image description](screenshot-3.png)
-![Image description](screenshot-4.png)
-![Image description](screenshot-5.png)
+![Image description](Screenshot-3.png)
+![Image description](Screenshot-2.png)
+![Image description](Screenshot-4.png)
+![Image description](Screenshot-5.png)
 
 This application is deployed on render and can be accessed through the following link:
 
@@ -98,4 +98,4 @@ To run this application (the master branch), you have to set your own environmen
 [![License](https://img.shields.io/:License-MIT-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - MIT License
-- Copyright 2021 © [Shripad Thorat](https://github.com/shripad5258/designdrop)
+- Copyright 2022 © [Shripad Thorat](https://github.com/shripad5258/designdrop)
