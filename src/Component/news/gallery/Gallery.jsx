@@ -14,8 +14,8 @@ function Gallery(props) {
   const dispatch = useDispatch();
   const updateNews = async () => {
     dispatch(setLoader(true));
-
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.REACT_APP_NEWS_API}`;
+    const url = `${process.env.REACT_APP_NEWS_URL}`
+    // const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.REACT_APP_NEWS_API}`;
 
     let data = await fetch(url);
     let parsedData = await data.json();
