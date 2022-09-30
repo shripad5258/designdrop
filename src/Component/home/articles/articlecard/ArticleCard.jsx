@@ -19,6 +19,7 @@ function ArticleCard(props) {
             <p>{articleDescription}</p>
             <div className="articleNavigate ">
               <Link to={articleLink}>
+                <i className="fa fa-chevron-right fa-3x icon-font"></i>
                 <p className="articleNavigate-text">Explore More....</p>
               </Link>
             </div>

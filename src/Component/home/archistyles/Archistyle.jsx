@@ -29,6 +29,7 @@ function Archistyle() {
                 >
                   Explore more
                 </a>
+                
               </div>
             </div>
           </div>
@@ -37,6 +38,7 @@ function Archistyle() {
               <img src={ModernArchitecture} alt="ModernArchitecture" />
               <div className="img-content">
                 <h3>Modern Architecture</h3>
+                
                 <a
                   href="https://en.wikipedia.org/wiki/Modern_architecture"
                   className="btn btn-primary"
