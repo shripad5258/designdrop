@@ -25,7 +25,7 @@ A virtual blog,Articles,and news application using the MERN stack (MongoDB, Expr
 
 This application is deployed on render and can be accessed through the following link:
 
-[MERN Blog on Heroku](https://designdrop.onrender.com/)
+[MERN Blog on render](https://designdrop.onrender.com/)
 
 ## Technology
 
