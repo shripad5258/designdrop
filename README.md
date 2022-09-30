@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# DesignDrop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Demo](#demo)
+- [Features](#features)
+- [Technology](#technology)
+- [Database Models](#database)
+- [Run](#run)
+- [License](#license)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+A virtual blog,Articles,and news application using the MERN stack (MongoDB, Express js, React js, and Node js).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Image description](screenshot-1.png)
 
-### `npm test`
+![Image description](screenshot-2.png)
+![Image description](screenshot-3.png)
+![Image description](screenshot-4.png)
+![Image description](screenshot-5.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application is deployed on render and can be accessed through the following link:
 
-### `npm run build`
+[MERN Blog on Heroku](https://designdrop.onrender.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The main technologies used to build this application are:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js 
+- MongoDB 
+- Express.js 
+- React.js 
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A blog app with the following features.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Unlogged in users can do the following:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- View all posts.
+- View all news.
+- View all articles.
+- View one post's content by clicking on it.
+- View post's comments.
+- Signup.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In addition to the above points, logged in users can do the following:
 
-## Learn More
+- Login or logout.
+- View all news.
+- Create a new post.
+- View/Edit/delete their posts.
+- Add a new comment on a post.
+- View/Edit/Delete their comments.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+All the models can be found in the models directory created using mongoose.
 
-### Code Splitting
+### User Schema:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- userName (String)
+- email (String)
+- password (String)
+- imagePath (String)
 
-### Analyzing the Bundle Size
+### Post Schema:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- title (String)
+- content (String)
+- imagePath (String)
+- createdAt (Date)
+- createdBy (ObjectID - a reference to the user's table)
+- comments (ObjectID - an array of comments on the post)
 
-### Making a Progressive Web App
+### Comment Schema:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- content (String)
+- createdAt (Date)
+- createdBy (ObjectID - a reference to the user's table)
 
-### Advanced Configuration
+## Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To run this application (the master branch), you have to set your own environmental variables in the server root folder. For security reasons, some variables have been hidden from view and used as environmental variables with the help of dotenv package. Below are the variables that you need to set in order to run the application:
 
-### Deployment
+- MONGO_URI: this is the connection string of your MongoDB Atlas database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- SECRET_KEY: you can provide any string here, it is used to encrypt the JWT authentication token.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+[![License](https://img.shields.io/:License-MIT-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- MIT License
+- Copyright 2021 © [Shripad Thorat](https://github.com/shripad5258/designdrop)
