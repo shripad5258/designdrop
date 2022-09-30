@@ -84,9 +84,9 @@ function BlogCard(props) {
                       onClick={deletePost}
                       className="fa fa-trash fa-4x"
                       aria-hidden="true"
-                    ></i>
+                    >delete</i>
                     <Link to={`/updateblog/${id}`}>
-                      <i className="fas fa-edit fa-4x "></i>
+                      <i className="fas fa-edit fa-4x ">update</i>
                     </Link>
                   </>
                 )}
