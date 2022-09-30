@@ -87,7 +87,7 @@ function BlogCard(props) {
                       
                     </i>
                     <Link to={`/updateblog/${id}`}>
-                      <i className="fas fa-edit fa-4x "></i>
+                      <i className="fa fa-edit fa-4x "></i>
                     </Link>
                   </>
                 )}
