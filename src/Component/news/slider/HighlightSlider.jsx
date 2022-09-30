@@ -26,7 +26,7 @@ function HighlightSlider(props) {
   const dispatch = useDispatch();
   const updateNews = async () => {
     dispatch(setLoader(true));
-    const url = `${process.env.REACT_APP_NEWS_URL}`;
+    const url = process.env.REACT_APP_NEWS_URL
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(parsedData.articles);
