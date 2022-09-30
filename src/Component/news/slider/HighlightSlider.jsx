@@ -1,6 +1,8 @@
 import React from "react";
 import SliderCard from "./SliderCard";
 import { useState, useEffect } from "react";
+import newsapi from "../newsapi/newsapi.js"
+
 
 //REDUX
 import { useSelector, useDispatch } from "react-redux";
@@ -66,7 +68,7 @@ function HighlightSlider(props) {
           },
         }}
       >
-        {articles.map((element, index) => {
+        {newsapi.map((element, index) => {
           return (
             <div key={index}>
               <SwiperSlide key={index}>

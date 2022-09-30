@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import GalleryCard from "./GalleryCard";
+import newsapi from "../newsapi/newsapi.js"
 
 //Images
 import imagenotfound from "../../../img/news/image-not-found.jpg";
@@ -15,8 +16,6 @@ function Gallery(props) {
   const updateNews = async () => {
     dispatch(setLoader(true));
     const url = process.env.REACT_APP_NEWS_URL
-    // const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.REACT_APP_NEWS_API}`;
-
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(parsedData.articles);
@@ -53,7 +52,7 @@ function Gallery(props) {
           justifyContent: "space-evenly",
         }}
       >
-        {articles.map((element) => {
+        {newsapi.map((element) => {
           return (
             <div className="class" key={element.url}>
               <GalleryCard
