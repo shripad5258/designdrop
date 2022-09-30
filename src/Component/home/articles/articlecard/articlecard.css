@@ -55,3 +55,7 @@
 .articleNavigate:hover{
   cursor: pointer;
 }
+
+.articleNavigate strong{
+  color: black;
+}
