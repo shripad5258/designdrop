@@ -29,7 +29,7 @@ function Card(props) {
                 href={newsUrl}
                 target="_blank"
               >
-                <i className="fas fa-chevron-right fa-3xl"></i>
+                <i className="fa fa-chevron-right fa-3xl"></i>
                 &nbsp;&nbsp;&nbsp;Find Out More
               </a>
             </div>

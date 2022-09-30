@@ -68,7 +68,7 @@ function BlogDetail() {
                     aria-hidden="true"
                   ></i>
                   <Link to={`/updateblog/${id}`}>
-                    <i className="fas fa-edit fa-4x deleteblog-icon"></i>
+                    <i className="fa fa-edit fa-4x deleteblog-icon"></i>
                   </Link>
                 </>
               )}

@@ -72,7 +72,7 @@ function BlogCard(props) {
 
             <div className="butoonclass">
               <div className="font-awesome icons">
-                <i className="fas fa-chevron-right fa-3x icon-font"></i>
+                <i className="fa fa-chevron-right fa-3x icon-font"></i>
                 <Link to={`/details/${id}`}>
                   <p className="card-link">Explore More</p>
                 </Link>
