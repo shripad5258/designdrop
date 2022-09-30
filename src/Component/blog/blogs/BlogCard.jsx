@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 // fontawasom
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import 'font-awesome/css/font-awesome.min.css';
 //TOAST
 import { toast } from "react-toastify";
 
