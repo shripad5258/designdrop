@@ -96,9 +96,9 @@ To run this application (the master branch), you have to set your own environmen
 
 ## License
 
-[![License](https://img.shields.io/:License-MIT-blue.svg?style=flat-square)](http://badges.mit-license.org)
+//[![License](https://img.shields.io/:License-MIT-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-- MIT License
+//- MIT License
 - Copyright 2022 © [Shripad Thorat](https://github.com/shripad5258/designdrop)
 
 ## Backend
