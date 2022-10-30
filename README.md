@@ -96,7 +96,7 @@ To run this application (the master branch), you have to set your own environmen
 
 ## License
 
-- Copyright 2022 © [Shripad Thorat](https://github.com/shripad5258/designdrop)
+- Copyright 2022 © [Shripad Thorat](https://github.com/shripad5258)
 
 ## Backend
 - [designDrop Backend](https://github.com/shripad5258/designdropapi)
