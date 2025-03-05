@@ -34,6 +34,7 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/ssrf" element={<Ssrf />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/news" element={<News />} />
         <Route exact path="/blog" element={<Blog />} />
