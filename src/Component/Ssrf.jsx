@@ -4,9 +4,9 @@ import React from "react";
 
 function Ssrf() {
   return (
-    <div className="container page-not-found">
-      <div className="page-not-found-container">
-        <div className="content">
+    <div>
+      <div >
+        <div >
           <h1>SSRF</h1>
           <h2>
             TSSRF for testing
