@@ -15,7 +15,7 @@ import PrivateRoutes from "./utils/PrivateRoutes";
 import BlogDetail from "./Component/blog/blogdetail/BlogDetail";
 import UserBlog from "./Component/blog/userblog/UserBlog";
 import UpdateBlog from "./Component/blog/updateblog/UpdateBlog";
-import Home from "./Component/Ssrf";
+import Ssrf from "./Component/Ssrf";
 
 
 //Static Pages
